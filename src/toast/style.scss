@@ -144,7 +144,7 @@
     &.just-toast {
         width: auto;
         max-width: 90vw;
-        left: calc(50%);
+        left: calc(50% - 2px);
         overflow: visible;
         top: 0;
         padding: 10px 0;

@@ -9,10 +9,19 @@ body {
 
 .App {
     text-align: center;
-    padding-top: 50%;
+    display: grid;
+    height: 100vh;
 
-    .button-wrapper {
-        margin: 5px;
+    .btns {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 4px;
+        grid-auto-flow: row;
+
+        .button-wrapper {
+            margin-bottom: 10px;
+        }
     }
 }
 
