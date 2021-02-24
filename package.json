@@ -1,0 +1,49 @@
+{
+  "name": "notification-toast-lite",
+  "version": "1.0.0",
+  "description": "A lite weight notification and toast component library build with react hook.",
+  "main": "build/index.js",
+  "types": "build/type/index.d.ts",
+  "files": [
+    "build/index.js",
+    "build/type/index.d.ts"
+
+  ],
+  "scripts": {
+    "build": "webpack --config config/webpack.prod.config.js",
+    "start": "NODE_ENV=development node scripts/dev-server.js",
+    "ts:build": "tsc --project ./tsconfig.build.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "notification",
+    "toast"
+  ],
+  "author": "Francis Tao",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "autoprefixer": "^9.8.6",
+    "css-loader": "^5.0.1",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.15",
+    "typescript": "~3.7.2",
+    "webpack": "4.42.1",
+    "webpack-bundle-analyzer": "^3.5.1",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {}
+}
