@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 import { useNotificationToastCtx, MessageType, MessagePosition, MessageMode } from '../toast';
-// import { useNotificationToastCtx, MessageType, MessagePosition, MessageMode } from '../../build/notification-toast.bundle';
-// console.log(useNotificationToastCtx, MessageType, MessagePosition, MessageMode);
-
 import './style.scss';
 
 export function UIContainer() {

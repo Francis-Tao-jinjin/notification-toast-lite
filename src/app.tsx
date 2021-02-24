@@ -3,7 +3,6 @@ import * as ReactDOM from 'react-dom';
 import Compose from './dev/compose';
 import { UIContainer } from './dev/index';
 import { NotificationToastProvider } from './toast';
-// import { NotificationToastProvider } from '../build/notification-toast.bundle';
 
 export class DevApp {
     private root:HTMLElement;
@@ -23,9 +22,6 @@ export class DevApp {
             <Compose components={[NotificationToastProvider]}>
                 <UIContainer/>
             </Compose>
-            // <NotificationToastProvider>
-            //     <UIContainer/>
-            // </NotificationToastProvider>
         , this.root);
     }
 }

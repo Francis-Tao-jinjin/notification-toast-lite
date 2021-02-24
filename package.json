@@ -1,8 +1,8 @@
 {
   "name": "notification-toast-lite",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A lite weight notification and toast component library build with react hook.",
-  "main": "build/index.js",
+  "main": "build/notification-toast.bundle.js",
   "types": "build/type/index.d.ts",
   "files": [
     "build/index.js",

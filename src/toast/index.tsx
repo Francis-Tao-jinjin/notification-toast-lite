@@ -123,13 +123,6 @@ export const useNotificationToastCtx = () => {
     return useContext(NTContext);
 };
 
-// export {
-//     NotificationToastProvider,
-//     useNotificationToastCtx,
-//     MessagePosition,
-//     MessageMode
-// }
-
 if (typeof exports !== 'undefined') {
     exports.NotificationToastProvider = NotificationToastProvider;
     exports.useNotificationToastCtx = useNotificationToastCtx;
