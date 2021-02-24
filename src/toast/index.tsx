@@ -80,6 +80,7 @@ const toastReducer:Reducer<MessageData[], Action> = (state, action) => {
             if (typeof lifeTime !== 'number' && mode === MessageMode.Notification) {
                 lifeTime = Infinity;
             } else {
+                // lifeTime = Infinity;
                 lifeTime = Math.min(10, Math.max(lifeTime || 5, 0.5));
             }
             const positions = [0,1,2,3,4];

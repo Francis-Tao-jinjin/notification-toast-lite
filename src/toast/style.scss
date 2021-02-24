@@ -110,9 +110,9 @@
     overflow-y: scroll;
     padding: 10px;
     padding-right: 15px;
-    // font-family: monospace;
     scroll-behavior: smooth;
     z-index: 200;
+    scrollbar-width: none;
 
     &.top-left {
         left: 10px;
@@ -142,7 +142,8 @@
     }
 
     &.just-toast {
-        width: unset;
+        width: auto;
+        max-width: 90vw;
         left: calc(50%);
         overflow: visible;
         top: 0;
@@ -159,6 +160,10 @@
                 margin: 0;
             }
         }
+    }
+
+    &::-ms-scrollbar {
+        width: 0;
     }
 
     &::-webkit-scrollbar {
@@ -188,20 +193,36 @@
 
             .measuring-wrapper {
                 padding: 10px;
+                display: flex;
 
-                & > * {
-                    display: inline-block;
-                    vertical-align: middle;
+                .toast-icon {
+                    flex: 0 0 18px;
+                    display: flex;
+                    justify-content: center;
+
+                    svg {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        margin: auto;
+                    }
+                }
+
+                .toast-content {
+                    flex: auto;
+                    min-inline-size: fit-content;
+                    min-inline-size: -moz-fit-content;
+                }
+
+                & > .toast-icon + .toast-content {
+                    margin-inline-end: 1rem;
                 }
             }
-                
 
             &.info .toast-icon,
             &.danger .toast-icon,
             &.success .toast-icon,
             &.warning .toast-icon {
-                height: 18px;
-                width: 18px;
                 margin-right: 0.5rem;
             }
 
@@ -255,14 +276,11 @@
                         .time {
                             display: inline-block;
                             vertical-align: middle;
-                            // font-family: sans-serif;
                             line-height: 18px;
                             height: 18px;
-                            // line-height: normal;
-                            font-size: 0.8rem;
+                            font-size: 0.9rem;
                             font-weight: 700;
                             opacity: 0.7;
-                            letter-spacing: 0.1rem;
                             margin-right: 0.5rem;
                         }
     

@@ -40,6 +40,15 @@ export function UIContainer() {
             'At least 90,000 more Americans are expected to have died with the virus by 1 June, an Institute for Health Metrics and Evaluation (IHME) projection says. By late May, the virus will kill around 500 Americans per day - down from approximately 2,000 now',
             '2,600 years old, and the capital of 10 dynasties - Nanjing has a long and colourful history.',
         ];
+
+        const toast = [
+            'setTimeout in React Components Using Hooks',
+            'new NodeRouter(logger);',  
+            'How hashes and other stuff gets cached',
+            'Clean up config file madness',
+            'Service worker can serve the templates from the website',
+        ];
+
         return (
         <React.Fragment>
             <div className="App">
@@ -122,7 +131,7 @@ export function UIContainer() {
                             notificationToastDispatch({
                                 type: 'ADD',
                                 payload: {
-                                    content: renderContent('Daily News', msgs[Math.floor(Math.random() * 4)]),
+                                    content: renderContent('Daily News', msgs[Math.floor(Math.random() * msgs.length)]),
                                     type: types[Math.floor(Math.random() * 5)],
                                     style: {
                                         borderRadius: '10px',
@@ -140,11 +149,11 @@ export function UIContainer() {
                             notificationToastDispatch({
                                 type: 'ADD',
                                 payload: {
-                                    content: 'setTimeout in React Components Using Hooks',
+                                    content: toast[Math.floor(Math.random() * msgs.length)],
                                     type: types[Math.floor(Math.random() * 5)],
                                     style: {
                                         borderRadius: '10px',
-                                        background: 'black',
+                                        background: 'rgba(0,0,0,0.8)',
                                         color: 'white',
                                     },
                                     mode: MessageMode.Toast,
