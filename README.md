@@ -6,7 +6,7 @@ A lite weight notification and toast component library build with react hook.
 
 **demo vedio**
 
-![gif image demo](https://j.gifs.com/nxB1mD.gif)
+<img src='https://j.gifs.com/nxB1mD.gif' alt="gif image demo">
 
 **notification and toast** are all supported
 
