@@ -4,9 +4,7 @@ A lite weight notification and toast component library build with react hook.
 
 **demo vedio**
 
-<video controls="true" style="width:600px; margin:auto">
-    <source src="/assets/toast.mp4">
-</video>
+<iframe src='//gifs.com/embed/nxB1mD' frameborder='0' scrolling='no' width='918px' height='684px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 **notification and toast**
 
