@@ -1,6 +1,6 @@
 {
   "name": "notification-toast-lite",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lite weight notification and toast component library build with react hook.",
   "main": "build/notification-toast.bundle.js",
   "types": "build/type/index.d.ts",
@@ -20,6 +20,14 @@
     "notification",
     "toast"
   ],
+  "homepage": "https://github.com/Francis-Tao-jinjin/notification-toast-lite",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Francis-Tao-jinjin/notification-toast-lite"
+  },
+  "bugs": {
+      "url": "https://github.com/Francis-Tao-jinjin/notification-toast-lite/issues"
+  },
   "author": "Francis Tao",
   "license": "MIT",
   "devDependencies": {
